@@ -1,15 +1,16 @@
 import "./App.css";
-import Navbar from "./components/NavBar/Navbar";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Boards from "./pages/Boards";
+import Home from "./pages/Home";
+import { Routes, Route } from "react-router-dom";
+import Users from "./pages/Users";
 
 function App() {
   return (
-    <div className=" mx-40 ">
-      <Navbar />
-      <Header />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />{" "}
+      <Route path="/boards" element={<Boards />} />{" "}
+      <Route path="/users" element={<Users />} />{" "}
+    </Routes>
   );
 }
 
