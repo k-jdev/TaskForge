@@ -26,26 +26,26 @@ const Navbar = () => {
     <nav>
       <div className="m-5 flex justify-between items-center">
         <div className="flex">
-          <h2 className="text-3xl font-bold text-customOrange">
+          <h2 className="text-3xl font-bold text-customOrange hover:text-white duration-300">
             <a href="/">TaskForge</a>
           </h2>
         </div>
-        <div className="flex items-center text-customRed font-bold text-lg">
+        <div className="flex items-center text-customRed font-bold text-lg ">
           <ul className="flex">
-            <li className="mr-8">
+            <li className="mr-8 hover:text-white duration-300">
               <a href="/boards">Дошки</a>
             </li>
-            <li className="mr-8">
+            <li className="mr-8 hover:text-white duration-300">
               <a href="/users">Користувачі</a>
             </li>
           </ul>
           <ul className="place-items-center">
-            <li>
+            <li className="hover:text-white duration-300">
               <button className="mr-4" onClick={() => openModal("register")}>
                 Зареєструватися
               </button>
             </li>
-            <li>
+            <li className="hover:text-white duration-300">
               <button onClick={() => openModal("login")}>Увійти</button>
             </li>
           </ul>

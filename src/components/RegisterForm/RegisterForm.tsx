@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button/Button";
 
 interface RegisterModalProps {
   isOpen: boolean;
@@ -40,12 +41,7 @@ const RegisterForm: React.FC<RegisterModalProps> = ({ isOpen, onClose }) => {
               className="w-full p-2 border border-gray-300 rounded-md"
             />
           </div>
-          <button
-            type="submit"
-            className="bg-customRed text-white px-4 py-2 rounded-md hover:bg-red-600"
-          >
-            Зареєструватися
-          </button>
+          <Button text="Зареєструватися" />
         </form>
         <button
           className="mt-4 text-gray-500 hover:text-gray-700"

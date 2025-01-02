@@ -1,5 +1,6 @@
 import React from "react";
 import headerImg from "../../assets/image.png";
+import Button from "./../Button/Button";
 
 function Header() {
   return (
@@ -13,9 +14,9 @@ function Header() {
             Організовуйте завдання, працюйте в команді та досягайте цілей швидше
             з нашим інтуїтивним інструментом управління
           </p>
-          <button className="mt-6 md:mt-10 font-bold text-sm md:text-base text-customPurple bg-customRed p-2 rounded-md hover:scale-110 hover:shadow-[0_4px_20px_rgba(255,99,71,0.8)] hover:text-white transition-all duration-300 ease-in-out">
-            Почати використання
-          </button>
+          <div className="mt-6">
+            <Button text="Почати використання" />
+          </div>
         </div>
       </div>
       <div className="relative group w-full md:w-auto">

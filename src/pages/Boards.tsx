@@ -1,11 +1,14 @@
 import React from "react";
 import Navbar from "./../components/NavBar/Navbar";
+import Button from "./../components/Button/Button";
 
 function Boards() {
   return (
     <div>
       <Navbar />
-      <p>Boards</p>
+      <div className="flex justify-center mt-10">
+        <Button text="Створити дошку +" />
+      </div>
     </div>
   );
 }
