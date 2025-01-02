@@ -5,7 +5,7 @@ import Footer from "../components/Footer/Footer";
 
 function Home() {
   return (
-    <div className=" mx-40 ">
+    <div>
       <Navbar />
       <Header />
       <Footer />
