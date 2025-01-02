@@ -1,10 +1,15 @@
 import "./App.css";
+import Navbar from "./components/NavBar/Navbar";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold ">Task Forge</h1>
-    </>
+    <div className=" mx-40 ">
+      <Navbar />
+      <Header />
+      <Footer />
+    </div>
   );
 }
 

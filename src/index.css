@@ -2,4 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  background-color: #4b2447;
+}
+/* Змінити ширину смуги прокрутки */
+::-webkit-scrollbar {
+  width: 12px; /* Ширина для вертикальної прокрутки */
+  height: 12px; /* Висота для горизонтальної прокрутки */
+}
 
+/* Змінити фон самої смуги прокрутки */
+::-webkit-scrollbar-track {
+  background: #2e2e2e; /* Світлий фон */
+  border-radius: 10px; /* Закруглення */
+}
+
+/* Змінити вигляд бігунка */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ff7b54, #ff3d54); /* Градієнт */
+  border-radius: 10px;
+  border: 3px solid #363636; /* Відступ від краю */
+}
+
+/* Змінити вигляд бігунка при наведенні */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff3d54; /* Змінюється колір */
+}
