@@ -12,7 +12,7 @@ function Footer() {
         <p className="text-sm mt-2">
           Організовуйте завдання, співпрацюйте з командою та досягайте цілей
           швидше. Наша платформа — це інструмент для ефективного управління
-          вашим часом і проєктами.
+          вашим часом і проєктами
         </p>
         <div className="flex justify-center gap-6 mt-4">
           <a href="#" className="hover:underline text-customGray text-sm">
