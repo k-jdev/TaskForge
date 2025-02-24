@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  background-color: #4b2447;
+  background-color: #f2eeed;
 }
 /* Змінити ширину смуги прокрутки */
 ::-webkit-scrollbar {
