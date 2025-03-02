@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import LoginForm from "../LoginForm/LoginForm";
 import RegisterForm from "../RegisterForm/RegisterForm";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isRegisterModalOpen, setRegisterModalOpen] = useState(false);
@@ -23,23 +24,19 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
-      <div className="m-5 flex justify-between items-center">
-        <div className="flex">
-          <h2 className="text-3xl font-bold text-customGray">
-            <a href="/">TaskForge</a>
-          </h2>
-        </div>
-        <div className="flex items-center text-customGray font-bold text-lg">
+    <nav className="">
+      <div className="mx-40 flex justify-between items-center">
+        <div className="flex"></div>
+        <div className="flex items-center text-customGray font-bold text-lg mt-4">
           <ul className="flex">
             <li className="mr-8">
-              <a href="/boards">Дошки</a>
+              <Link to="/boards">Дошки</Link>
             </li>
             <li className="mr-8">
-              <a href="/users">Користувачі</a>
+              <Link to="/users">Користувачі</Link>
             </li>
           </ul>
-          <ul className="place-items-center">
+          <ul className="place-items-center flex ">
             <li>
               <button className="mr-4" onClick={() => openModal("register")}>
                 Зареєструватися
