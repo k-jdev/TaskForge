@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./../components/NavBar/Navbar";
 
-function Boards() {
+const Boards: React.FC = () => {
   return (
     <div>
       <Navbar />
@@ -10,6 +10,6 @@ function Boards() {
       </button>
     </div>
   );
-}
+};
 
 export default Boards;
