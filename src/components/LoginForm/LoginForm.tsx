@@ -1,11 +1,11 @@
 import React from "react";
 
-type Props = {
-  closeModal: any;
-  isLoginModalOpen: any;
+type LoginFormProps = {
+  closeModal: () => {};
+  isLoginModalOpen: boolean;
 };
 
-const LoginForm: React.FunctionComponent<Props> = ({
+const LoginForm: React.FC<LoginFormProps> = ({
   closeModal,
   isLoginModalOpen,
 }) => {

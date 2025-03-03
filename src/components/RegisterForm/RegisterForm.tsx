@@ -1,11 +1,11 @@
 import React from "react";
 
-type Props = {
-  closeModal: any;
-  isRegisterModalOpen: any;
+type RegisterFormProps = {
+  closeModal: () => {};
+  isRegisterModalOpen: boolean;
 };
 
-const RegisterForm: React.FunctionComponent<Props> = ({
+const RegisterForm: React.FC<RegisterFormProps> = ({
   closeModal,
   isRegisterModalOpen,
 }) => {
